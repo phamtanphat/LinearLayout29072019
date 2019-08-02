@@ -3,15 +3,25 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="horizontal"
     android:layout_height="match_parent"
+    android:weightSum="10"
     tools:context=".MainActivity">
-
-    <!--ctrl + space : gợi ý code-->
-    <!--wrap_content : co dãn kích thước theo view-->
-    <!--match_parent : lấy hết kích thước cha cho-->
     <TextView
+        android:layout_weight="1"
+        android:textColor="#FFFFFF"
+        android:background="#F29061"
         android:textSize="40sp"
         android:text="View 1"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content" />
+    <TextView
+        android:layout_weight="9"
+        android:textColor="#FFFFFF"
+        android:background="#FDB9B9"
+        android:textSize="40sp"
+        android:text="View 2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>
