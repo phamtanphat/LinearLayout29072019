@@ -3,25 +3,54 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:layout_height="match_parent"
-    android:weightSum="10"
     tools:context=".MainActivity">
-    <TextView
-        android:layout_weight="1"
-        android:textColor="#FFFFFF"
-        android:background="#F29061"
-        android:textSize="40sp"
-        android:text="View 1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:layout_weight="9"
-        android:textColor="#FFFFFF"
-        android:background="#FDB9B9"
-        android:textSize="40sp"
-        android:text="View 2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content" />
 
+    <!--Group 1 : A B C D-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:background="#f20"
+            android:layout_weight="1"
+            android:textSize="40sp"
+            android:text="A"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <TextView
+            android:background="#706C6A"
+            android:layout_weight="1"
+            android:textSize="40sp"
+            android:text="B"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <TextView
+            android:background="#73C421"
+            android:layout_weight="1"
+            android:textSize="40sp"
+            android:text="C"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <TextView
+            android:background="#3B96BE"
+            android:layout_weight="1"
+            android:textSize="40sp"
+            android:text="D"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+    </LinearLayout>
+    <!--Group 2 : A B C D-->
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </LinearLayout>
 </LinearLayout>
